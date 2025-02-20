@@ -67,7 +67,7 @@ cp Checker4ScreenBrightnessThenSend.plist ~/Library/LaunchAgents/
 # Load the service
 sudo launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/Checker4ScreenBrightnessThenSend.plist
 sudo launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/Checker4ScreenBrightnessThenSend.plist
-sudo launchctl list | grep -i Checker4ScreenBrightnessThenSend
+launchctl list | grep -i Checker4ScreenBrightnessThenSend
 ```
 
 ## Customization
