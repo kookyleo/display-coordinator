@@ -9,9 +9,9 @@
     <array>
         <string>/usr/local/bin/Checker4ScreenBrightnessThenSend</string>
         <string>--host</string>
-        <string>10.10.20.209</string>
+        <string>TARGET_HOST</string>
         <string>--port</string>
-        <string>55000</string>
+        <string>TARGET_PORT</string>
     </array>
     
     <key>RunAtLoad</key>
