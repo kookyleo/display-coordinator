@@ -8,7 +8,7 @@ The goal is to automatically turn off one screen when the other is activated (wh
 ## How It Works
 Two programs work together to achieve this:
 
-1. **Checker4ScreenBrightnessThenSender**
+1. **Checker4ScreenBrightnessThenSend**
    - Continuously monitors screen brightness
    - Sends a specific message to another machine when screen is activated
 
@@ -47,27 +47,27 @@ cp ReceiverThenSleepDisplay.plist ~/Library/LaunchAgents/
 # Load the service
 sudo launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/ReceiverThenSleepDisplay.plist
 sudo launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/ReceiverThenSleepDisplay.plist
-sudo launchctl list | grep -i ReceiverThenSleepDisplay
+launchctl list | grep -i ReceiverThenSleepDisplay
 ```
 
-### Install Checker4ScreenBrightnessThenSender
+### Install Checker4ScreenBrightnessThenSend
 ```bash
 # Compile and install
-swiftc Checker4ScreenBrightnessThenSender.swift
-cp Checker4ScreenBrightnessThenSender /usr/local/bin/
-chmod 755 /usr/local/bin/Checker4ScreenBrightnessThenSender
+swiftc Checker4ScreenBrightnessThenSend.swift
+cp Checker4ScreenBrightnessThenSend /usr/local/bin/
+chmod 755 /usr/local/bin/Checker4ScreenBrightnessThenSend
 
 # Configure and setup LaunchAgent
 TARGET_HOST=1.2.3.4
 TARGET_PORT=12345
-sed -i '' "s/TARGET_HOST/$TARGET_HOST/g" Checker4ScreenBrightnessThenSender.plist
-sed -i '' "s/TARGET_PORT/$TARGET_PORT/g" Checker4ScreenBrightnessThenSender.plist
-cp Checker4ScreenBrightnessThenSender.plist ~/Library/LaunchAgents/
+sed -i '' "s/TARGET_HOST/$TARGET_HOST/g" Checker4ScreenBrightnessThenSend.plist
+sed -i '' "s/TARGET_PORT/$TARGET_PORT/g" Checker4ScreenBrightnessThenSend.plist
+cp Checker4ScreenBrightnessThenSend.plist ~/Library/LaunchAgents/
 
 # Load the service
-sudo launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/Checker4ScreenBrightnessThenSender.plist
-sudo launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/Checker4ScreenBrightnessThenSender.plist
-sudo launchctl list | grep -i Checker4ScreenBrightnessThenSender
+sudo launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/Checker4ScreenBrightnessThenSend.plist
+sudo launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/Checker4ScreenBrightnessThenSend.plist
+sudo launchctl list | grep -i Checker4ScreenBrightnessThenSend
 ```
 
 ## Customization
