@@ -7,7 +7,7 @@
     
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/local/bin/Checker4ScreenBrightnessThenSender</string>
+        <string>/usr/local/bin/Checker4ScreenBrightnessThenSend</string>
         <string>--host</string>
         <string>10.10.20.209</string>
         <string>--port</string>
