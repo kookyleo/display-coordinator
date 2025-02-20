@@ -28,8 +28,8 @@ By combining these programs, we can achieve the desired screen control behavior.
 
 ### Clone and Navigate
 ```bash
-git clone ...
-cd ..
+git clone https://github.com/kookyleo/display-coordinator.git
+cd display-coordinator
 ```
 
 ### Install ReceiverThenSleepDisplay
