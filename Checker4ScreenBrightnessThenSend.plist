@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>local.checker4screenbrightnessthensend</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/Checker4ScreenBrightnessThenSender</string>
+        <string>--host</string>
+        <string>10.10.20.209</string>
+        <string>--port</string>
+        <string>55000</string>
+    </array>
+    
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <key>KeepAlive</key>
+    <true/>
+</dict>
+</plist>
