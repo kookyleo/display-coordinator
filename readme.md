@@ -1,4 +1,4 @@
-# Screen Control for Dual Mac Setup
+# Display Coordinator for Dual Mac
 
 ## Background
 I have two mac with 27" displays on my desk, which is great for productivity. However, I don't need both screens active simultaneously as they serve different purposes. In fact, having both screens lit up can be distracting - the non-focused screen becomes like a desk lamp shining directly at your eyes. That's why I created these scripts.
@@ -24,7 +24,7 @@ By combining these programs, we can achieve the desired screen control behavior.
 - External display state detection might vary depending on the hardware
 - Likely requires case-by-case debugging as these are utility scripts rather than a polished product
 
-## Installation and Usage
+## Installation and Usage reference
 
 ### Clone and Navigate
 ```bash
